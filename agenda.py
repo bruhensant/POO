@@ -5,13 +5,21 @@ class Agenda():
     def inserirPessoa(self, usuario): # método = função, que vai dar append(x)
         self.Pessoas.append(usuario)  # dentro de uma lista chamada Pessoas, que é o Atributo de "Agenda"
 
-    # removerPessoa(pessoa)
+    def removerPessoa(self, usuario):
+        #for contatinho in self.Pessoas:
+            #if contatinho == nome:
+                #removo
+        pass
 
-    def imprimirAgenda(self):
+    def imprimirAgenda(self): # método que exibe todos os itens da agenda
         print(self.Pessoas)
 
 class Pessoa():
-    pass
+    def __init__(self, nome, telefone, email, matricula):
+        self.nome = nome
+        self.telefone = telefone
+        self.email = email
+        self.matricula = matricula
 
 #######################################################################
 #                           >> EXECUÇÕES <<                           #
