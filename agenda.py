@@ -26,10 +26,14 @@ class Pessoa():
 #                           >> EXECUÇÕES <<                           #
 #######################################################################
 
-a1 = Pessoa('Bunda', 12345678, 'bunda@cu.com', 1111)
+a1 = Pessoa('Furlano', 1111-1111, 'email1@email.com', 1111)
+a2 = Pessoa('Sicrano', 2222-2222, 'email2@email.com', 2222)
+a3 = Pessoa('Beltrano', 3333-3333, 'email3@email.com', 3333)
 
 contatos = Agenda()
 
 contatos.inserirPessoa(a1)
+contatos.inserirPessoa(a2)
+contatos.inserirPessoa(a3)
 
 contatos.imprimirAgenda()
