@@ -1,5 +1,5 @@
 class Agenda():
-    def __init__(self): # construtor
+    def __init__(self):   # construtor
         self.Pessoas = [] # ou seja, tudo que for definido como "Agenda", vai receber essa característica
 
     def inserirPessoa(self, usuario): # método = função, que vai dar append(x)
@@ -12,7 +12,7 @@ class Agenda():
         pass
 
     def imprimirAgenda(self): # método que exibe todos os itens da agenda
-        print(self.Pessoas)
+            print(self.Pessoas)
 
 class Pessoa():
     def __init__(self, nome, telefone, email, matricula):
