@@ -12,7 +12,8 @@ class Agenda():
         pass
 
     def imprimirAgenda(self): # método que exibe todos os itens da agenda
-            print(self.Pessoas)
+        for contatinho in self.Pessoas:
+            print(contatinho.nome)
 
 class Pessoa():
     def __init__(self, nome, telefone, email, matricula):
@@ -21,18 +22,14 @@ class Pessoa():
         self.email = email
         self.matricula = matricula
 
-#######################################################################
-#                           >> EXECUÇÕES <<                           #
 ####################################################################### 
+#                           >> EXECUÇÕES <<                           #
+#######################################################################
+
+a1 = Pessoa('Bunda', 12345678, 'bunda@cu.com', 1111)
 
 contatos = Agenda()
 
-# contatos.Pessoas = []
-
-contatos.inserirPessoa('fulano')
-contatos.inserirPessoa('sicrano')
-contatos.inserirPessoa('beltrano')
+contatos.inserirPessoa(a1)
 
 contatos.imprimirAgenda()
-
-# print(contatos) >> ERRO!
