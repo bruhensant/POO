@@ -6,10 +6,9 @@ class Agenda():
         self.Pessoas.append(usuario)  # dentro de uma lista chamada Pessoas, que é o Atributo de "Agenda"
 
     def removerPessoa(self, usuario):
-        #for contatinho in self.Pessoas:
-            #if contatinho == nome:
-                #removo
-        pass
+        for contatinho in self.Pessoas:
+            if contatinho.nome == usuario:
+                self.Pessoas.remove(contatinho)
 
     def imprimirAgenda(self): # método que exibe todos os itens da agenda
         for contatinho in self.Pessoas:
@@ -22,7 +21,7 @@ class Pessoa():
         self.email = email
         self.matricula = matricula
 
-####################################################################### 
+#######################################################################
 #                          >=> EXECUÇÕES <=<                          #
 #######################################################################
 
@@ -35,5 +34,11 @@ contatos = Agenda()
 contatos.inserirPessoa(a1)
 contatos.inserirPessoa(a2)
 contatos.inserirPessoa(a3)
+
+contatos.imprimirAgenda()
+
+contatos.removerPessoa('Sicrano')
+
+print('==============================')
 
 contatos.imprimirAgenda()
