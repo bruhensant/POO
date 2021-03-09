@@ -21,11 +21,30 @@ class Pessoa():
         self.email = email
         self.matricula = matricula
 
-    # get
+    # 1 get <|
 
-    # set
+    def obterNome(self):
+        print(self.nome)
 
-    #
+    def obterEmail(self):
+        print(self.email)
+    
+    # 2 set <|
+
+    def alterarTelefone(self, numero):
+        self.telefone = numero
+    
+    def alterarMatricula(self, novaM):
+        self.matricula = novaM
+
+    # 3 validar matricula
+
+    def validarMatricula(self):
+        if len(str(self.matricula)) < 4:
+            print('Matrícula inválida')
+        else:
+            print('Matrícula válida')
+
 
 #######################################################################
 #                          >=> EXECUÇÕES <=<                          #
@@ -48,3 +67,8 @@ contatos.removerPessoa('Sicrano')
 print('==============================')
 
 contatos.imprimirAgenda()
+
+print('==============================')
+
+a1.obterNome()
+a3.obterEmail()
