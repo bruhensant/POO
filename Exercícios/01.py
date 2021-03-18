@@ -5,21 +5,13 @@
 
 class Encapsular():
     def __init__(self,x):
-        self.__valor = int(x)
+        self.__valor = x
     
     def zerar(self):
-        self.__valor = int(0)
+        self.__valor = 0
 
     def incrementar(self, x):
-        self.__valor += int(x)
+        self.__valor += x
 
     def imprimir(self):
         print(self.__valor)
-
-a1 = Encapsular(2)
-
-a1.imprimir
-a1.incrementar(8)
-a1.imprimir
-a1.zerar
-a1.imprimir
