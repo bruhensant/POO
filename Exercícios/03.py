@@ -14,5 +14,21 @@
 #       verificados, retornando um valor booleano em caso de sucesso ou
 #       falha.
 
-class termometro():
-    
+class Termometro():
+    def __init__(self, temperatura=15): # default = 15, a menos que outro valor seja inserido
+            self.temperatura = temperatura
+
+    def aumentarTemperatura(self):
+        if self.temperatura >= 100:
+            return False
+        else:
+            self.temperatura += 5
+
+    def diminuirTemperatura(self):
+        if self.temperatura <= -20:
+            return False
+        else:
+            self.temperatura -= 5
+
+    def getTemperatura(self):
+        return self.temperatura
