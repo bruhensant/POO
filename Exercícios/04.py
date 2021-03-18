@@ -33,3 +33,4 @@ class Empregado(Pessoa):
 a1 = Pessoa('João')
 
 a2 = Empregado('Maria', 200, 'Dona', 'Rua dos Bobos')
+
