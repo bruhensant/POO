@@ -19,3 +19,17 @@
 #        > o Um salário não pode ter seu valor negativo. Logo, ao atualizar salário,
 #        deve-se verificar sua consistência
 
+class Pessoa():
+    def __init__(self,nome):
+        self.nome = nome
+
+class Empregado(Pessoa):
+    def __init__(self, nome, salario, cargo, endereco):
+        self.nome= nome
+        self.salario = salario 
+        self.cargo = cargo 
+        self.endereco = endereco  
+
+a1 = Pessoa('João')
+
+a2 = Empregado('Maria', 200, 'Dona', 'Rua dos Bobos')
