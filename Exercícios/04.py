@@ -19,18 +19,32 @@
 #        > o Um salário não pode ter seu valor negativo. Logo, ao atualizar salário,
 #        deve-se verificar sua consistência
 
+!!!! VEJA OS VÍDEOS DE GETTER E SETTER:
+
+https://youtu.be/PGXwNophTOQ
+
+!!!! VEJA /\ /\ /\ /\ /\ /\
+
 class Pessoa():
-    def __init__(self,nome):
+    def __init__(self,nome, idade):
         self.nome = nome
+        self.idade = idade
 
 class Empregado(Pessoa):
-    def __init__(self, nome, salario, cargo, endereco):
-        self.nome= nome
-        self.salario = salario 
-        self.cargo = cargo 
-        self.endereco = endereco  
+    def __init__(self, nome, idade, salario, cargo, endereco):
+        super().__init__(nome, idade)
 
-a1 = Pessoa('João')
+        self.salario = salario
+        self.cargo = cargo
+        self.endereco = endereco
 
-a2 = Empregado('Maria', 200, 'Dona', 'Rua dos Bobos')
+class Endereco():
+    def __init__(self,rua, ncasa,):
+        self.rua = rua
+        self.ncasa = ncasa
 
+e2 = Endereco('Rua dos Bobos', 51)
+
+a1 = Pessoa('João',18)
+
+a2 = Empregado('Maria',36, 200, 'Dona', e2)
