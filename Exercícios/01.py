@@ -4,17 +4,17 @@
 # imprimir o valor da variável.
 
 class Encapsular():
-    def __init__(self,valor):
-        self.__valor:int = valor
+    def __init__(self,x):
+        self.__valor = int(x)
     
     def zerar(self):
-        self.valor = 0
+        self.__valor = int(0)
 
-    def incrementar(self, valor):
-        self.valor += valor
+    def incrementar(self, x):
+        self.__valor += int(x)
 
     def imprimir(self):
-        print(self.valor)
+        print(self.__valor)
 
 a1 = Encapsular(2)
 
