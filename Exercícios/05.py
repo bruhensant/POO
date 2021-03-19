@@ -8,6 +8,4 @@
 #   – Remover funcionários
 #   – Apresentar lista dos atuais funcionários, com os respectivos salários.
 
-from a04 import *
-
 a1 = Pessoa('jose',14)
