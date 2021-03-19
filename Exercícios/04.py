@@ -1,4 +1,4 @@
-# A fim de representar empregados em uma firma, crie uma classe chamada
+# 4 - A fim de representar empregados em uma firma, crie uma classe chamada
 # Empregado que herda as características de uma classe Pessoa, incluindo as
 # seguintes características:
 #    – Atributos
