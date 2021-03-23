@@ -27,14 +27,17 @@ class Funcionarios():
 class Recepcionista():
     def __init__(self):
         self.salario = 2000.00
+        self.abono = 300
 
 class Porteiro():
     def __init__(self):
         self.salario = 2050.00
+        self.abono = 300
 
 class RMotorista():
     def __init__(self):
         self.salario = 2030.00
+        self.abono = 300
 
 e2 = Endereco('Rua dos Bobos', 51)
 a1 = Empregado('Marcelo', 21, Recepcionista().salario, Recepcionista(), e2)
