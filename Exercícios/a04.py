@@ -53,7 +53,11 @@ class Endereco():
         self.rua = rua
         self.numero_casa = numero_casa
 
+# Execuções 
+
 e2 = Endereco('Rua dos Bobos', 51)
 
 a1 = Pessoa('João',18)
 a2 = Empregado('Maria',36, 200, 'Dona', e2)
+
+# Done

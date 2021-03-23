@@ -32,3 +32,5 @@ class Termometro():
 
     def getTemperatura(self):
         return self.temperatura
+
+# Done
