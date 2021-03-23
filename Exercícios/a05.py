@@ -10,6 +10,31 @@
 
 from a04 import *
 
-a1 = Pessoa('jose',14)
+class Funcionarios():
+    def __init__(self):
+        self.funcs = []
+    
+    def listarFuncionarios(self):
+        for x in self.funcs:
+            print(x.nome(),x.salario)
 
-print(a1.nome)
+    def addFuncionario(self, funcio):
+        self.funcs.append(funcio)
+
+    def demitirFuncionario(self, funcio):
+        self.funcs.remove(funcio)
+
+class Recepcionista():
+    def __init__(self):
+        self.salario = 2000.00
+
+class Porteiro():
+    def __init__(self):
+        self.salario = 2050.00
+
+class RMotorista():
+    def __init__(self):
+        self.salario = 2030.00
+
+e2 = Endereco('Rua dos Bobos', 51)
+a1 = Empregado('Marcelo', 21, Recepcionista().salario, Recepcionista(), e2)
