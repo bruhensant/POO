@@ -16,7 +16,7 @@ class Funcionarios():
     
     def listarFuncionarios(self):
         for x in self.funcs:
-            print(x.nome(),x.salario)
+            print(x.nome(), x.salario)
 
     def addFuncionario(self, funcio):
         self.funcs.append(funcio)
@@ -34,10 +34,16 @@ class Porteiro():
         self.salario = 2050.00
         self.abono = 300
 
-class RMotorista():
+class Motorista():
     def __init__(self):
         self.salario = 2030.00
         self.abono = 300
 
+lista = Funcionarios()
+
 e2 = Endereco('Rua dos Bobos', 51)
 a1 = Empregado('Marcelo', 21, Recepcionista().salario, Recepcionista(), e2)
+
+lista.addFuncionario(a1)
+
+lista.listarFuncionarios()
