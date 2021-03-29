@@ -16,7 +16,7 @@ class Funcionarios():
     
     def listarFuncionarios(self):
         for x in self.funcs:
-            print(x.nome(), x.salario)
+            return x.nome(), x.salario()
 
     def addFuncionario(self, funcio):
         self.funcs.append(funcio)
@@ -44,6 +44,4 @@ lista = Funcionarios()
 e2 = Endereco('Rua dos Bobos', 51)
 a1 = Empregado('Marcelo', 21, Recepcionista().salario, Recepcionista(), e2)
 
-lista.addFuncionario(a1)
-
-lista.listarFuncionarios()
+# Done ?
